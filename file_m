@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "Please enter type (bash or python...): "
+read user_input1
+
+if [[ "$user_input1" == "python" ]]; then
+    ht="#!/usr/bin/python3"
+elif [[ "$user_input1" == "bash" ]]; then
+    ht="#!/bin/bash"
+else
+    echo "Unsupported language. Exiting..."
+    exit 1
+fi
+
+echo "Please enter file name: "
+read user_input
+
+touch "$user_input"
+chmod u+x "$user_input"
+echo "$ht" > "$user_input"
+vi "$user_input"
