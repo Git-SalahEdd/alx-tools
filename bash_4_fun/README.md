@@ -14,7 +14,7 @@ Generate shell scripts with ease!
 
 The Code Generator is a simple bash script that helps you create shell scripts with the shebang line  or header for either C, Bash or Python.
 
-	- file_m.bash : bash script that help you to easly create file in bash, python or C with corresponding header
+	- file_m.bash : bash script that help you to easily create file in bash, python or C with corresponding header
 	- dir_m.bash : create and take you into a directory and create  README.md file not empty
 
 ## Usage
