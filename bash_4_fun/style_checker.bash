@@ -5,7 +5,7 @@ read -p "Please press 1 for Python or 2 for C file: " choice
 
 if [[ "$choice" == "1" ]]; then
     # Check Python files (exclude those with 'main' in their names)
-    python_files=$(find . -name "*.py" | grep -v '/main/' | grep -v 'main/')
+    python_files=$(find . -name "*.py" | grep -v 'main' | grep -v 'main/')
     
     if [ -n "$python_files" ]; then
         echo "Checking Python files:"
@@ -17,7 +17,7 @@ if [[ "$choice" == "1" ]]; then
     fi
 elif [[ "$choice" == "2" ]]; then
     # Check C files (exclude those with 'main' in their names)
-    c_files=$(find . -name "*.c" | grep -v '/main/' | grep -v 'main/')
+    c_files=$(find . -name "*.c" | grep -v 'main' | grep -v 'main/')
 
     if [ -n "$c_files" ]; then
         echo "Checking C files:"
